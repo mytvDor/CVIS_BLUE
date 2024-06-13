@@ -1,0 +1,197 @@
+/* the css is changed by Lahu */
+/* nav{
+    display: flex;
+    align-items: contex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: rgba(235, 233, 244, 0.708);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none ;
+    padding: 0 20px ;
+    position:relative ;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(10, 10, 27);
+    transition: 0.3s ease-in-out;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color:  rgb(2, 2, 39);
+}
+
+.navbar li a:hover::after,
+.navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background:  black;
+    position: absolute;
+    bottom:-2px;
+    left:20px;
+}
+
+.logoImg{
+
+    padding: 10px;
+
+} */
+
+/*footer*/
+.footer {
+  background-color: #def4ff;
+  padding: 50px 0;
+  /* border: 2px solid red; */
+}
+
+.footer h2 {
+  margin-left: 2%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 700px; */
+
+  /* border: 2px solid green; */
+}
+
+.footer-section {
+  flex: 1;
+  color: #333;
+  margin: 0 20px;
+  margin-left: 5%;
+  min-width: 200px;
+  /* height-min: 150px;
+  height-max: 150px; */
+
+  /* border: 2px solid red; */
+}
+
+.footer-section h2 {
+  margin-left: 0;
+  align-items: center;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.enroll-button {
+  padding: 10px 20px;
+  background-color: #3ca9e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20vw;
+  height: 50px;
+  position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: bold;
+  margin: 20px;
+}
+
+.enroll-button:hover {
+  color: #3ca9e2;
+  border: 2px solid #3ca9e2;
+}
+
+.contact-s {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: start;
+  justify-content: center;
+}
+
+.contact-s p {
+  margin: 0;
+}
+
+.contact-s h3 {
+  margin-bottom: 25px;
+}
+
+.Address {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info p {
+  /* margin-left: 10px; */
+}
+
+.join {
+  display: flex;
+  algin-item: start;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  /* justify-content: start; */
+
+  /* justify-content: space-between; */
+}
+
+.bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Follow */
+.socialMedia-icons a {
+  color: #01559f;
+  font-size: 50px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.socialMedia-icons a:hover {
+  color: #333;
+}
+@media (max-width: 1450px) and (min-width: 800px) {
+  .social {
+    padding-left: 70px;
+    /* border: 2px solid red; */
+  }
+}
+
+.add-cont {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.addr,
+.phone {
+  margin-left: 10px;
+  max-width: 300px;
+  /* border: 2px solid red; */
+}
+
+.ca-gap {
+  /* border: 2px solid red; */
+  margin: 10px;
+}
+
+.loc {
+  margin-top: 7px;
+}

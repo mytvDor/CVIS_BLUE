@@ -1,0 +1,184 @@
+/* .GiveFeedback-container {
+  margin-top: -15%;
+  height: 100vh;
+  width: 60%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.GiveFeedback-container form {
+  display: flex;
+  flex-direction: column;
+}
+.gapM {
+  margin: 0px;
+  height: 500px;
+  overflow: hidden;
+}
+.row-feedback {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+  margin-left: 15%;
+  width: 60%;
+}
+
+.label-group {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+
+.GiveFeedback-container label {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 20rem;
+}
+
+.GiveFeedback-container input[type="text"],
+.GiveFeedback-container input[type="email"] {
+  padding: 10px 10px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #ff3333;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+}
+
+.textarea-container {
+  padding-top: 2rem;
+  align-items: left;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.textarea-container textarea {
+  border: none;
+  border-bottom: 1px solid #ff3333;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  width: 100%;
+}
+
+.btn-container {
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 25;
+}
+
+.btn-container button {
+  background-color: brown;
+  color: white;
+  border: none;
+  width: 7rem;
+  margin-top: 40px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-container button:hover {
+  background-color: #0056b3;
+}
+
+.MuiRating-root {
+  margin-top: 15px;
+  display: flex;
+}
+
+.MuiRating-root {
+  max-width: 20px;
+}
+
+.MuiRating-sizeMedium {
+  max-width: 20px;
+}
+
+.MuiRating-root {
+  max-width: 20px;
+}
+
+.css-1qqgbpl-MuiRating-root {
+  max-width: 20px;
+} */
+
+.label-group input {
+  height: 30px;
+  margin: 10px;
+  min-width: 40px;
+  max-width: 170px;
+}
+.block {
+  display: flex;
+}
+
+.label-group textarea {
+  margin-top: 10px;
+
+  height: 30px;
+  margin: 10px;
+  min-width: 70px;
+  max-width: 170px;
+}
+
+.GiveFeedback-container {
+  margin-top: -25%;
+  height: 800px;
+  /* width: 90%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.par {
+  margin: 10px;
+  text-align: left;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gapM {
+  border: 2px solid #3ca9e2;
+  margin-top: -700px;
+  background: #e6f6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 00px; */
+}
+
+.btn-container button {
+  background: #3ca9e2;
+  color: white;
+  margin: 30px;
+}
+
+.row-feedback {
+  display: block;
+}

@@ -1,0 +1,93 @@
+/* .lesson-component {
+  display: flex;
+  height: 90vh;
+  margin-top: 100px;
+  flex-wrap: warap;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  width: 90%;
+}
+
+.lesson-list {
+  background-color: white;
+  padding: 16px;
+  overflow-y: scroll;
+  min-width: 250px;
+  border: 2px solid red;
+}
+
+.chapter-list {
+  color: black;
+}
+.lesson {
+  color: darkgrey;
+}
+.lesson-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: scroll;
+  background: white;
+}
+
+.currentLesson {
+  margin-left: 5px;
+}
+
+.full-screen-button {
+  float: right;
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+}
+
+.lessonContentText {
+  text-align: justify;
+  margin: 15px;
+}
+
+.ant-collapse {
+  border: 1px solid red;
+  min-width: 80px;
+} */
+
+.lesson-component {
+  display: flex;
+  /* height: 90vh; */
+  margin-top: 100px;
+  margin: 140px 50px 40px 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  overflow: hidden;
+  background-color: #f4f4f4;
+  width: 90%;
+}
+
+.lesson-list,
+.lesson-content {
+  background-color: white;
+  padding: 16px;
+  overflow-y: scroll;
+  min-width: 200px;
+  /* border: 2px solid red; */
+  max-height: 500px;
+}
+.lessonContentText p {
+  text-align: left;
+}
+@media (max-width: 751px) {
+  .lesson-component {
+    margin: 140px 50px 40px 10px;
+  }
+}

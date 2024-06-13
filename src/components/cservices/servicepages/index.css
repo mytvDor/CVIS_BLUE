@@ -1,0 +1,73 @@
+/* index.css */
+
+.container {
+  margin-top: 120px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-item: center;
+  height: 100%;
+
+  margin-bottom: 40px;
+}
+
+.wblock {
+  width: 500px;
+  height: 500px;
+  margin: 40px;
+  /* border: 2px solid red; */
+}
+
+.image {
+  margin-top: 70px;
+  height: 500px;
+  width: 500px;
+}
+
+.text {
+  /* flex: 1;
+  text-align: center; */
+
+  padding-left: 40px;
+}
+
+.texth1 {
+  font-size: 28px;
+  text-align: center;
+  /* margin-top: -250px; */
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+button .btn1 {
+  align-items: left;
+  margin-left: 10px;
+}
+button .btn2 {
+  align-items: right;
+  margin: 10px;
+}
+.enqbtn {
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+}
+.enqbtn:hover {
+  background-color: #1a75ff;
+}

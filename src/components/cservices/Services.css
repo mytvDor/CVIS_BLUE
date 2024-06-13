@@ -1,0 +1,152 @@
+/* .HeaderText{
+    text-align: center;
+    font-size: 1500;
+    text-emphasis: 200;
+}
+.Headerimage{
+    position: relative;
+    width: 1380px; 
+    height: 300px; 
+    justify-content: center;
+    margin-left: 4%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.mainCard{
+    padding: 10px;
+    margin-top: 10px;
+}
+ .cards .mainCard{
+    padding: 2rem;
+ } */
+
+/* Updated styles */
+
+/* 
+.HeaderText {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.Headerimage {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-item: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  margin: 70px;
+}
+
+.mainCard {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mainCard:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainCard a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainCard .card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.mainCard img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.mainCard .card-content {
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.mainCard .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  margin: 40px;
+  max-width: 80%;
+} */
+
+/* .cards {
+  margin: 10px;
+  overflow: hidden;
+} */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-item: center;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  justify-self: center;
+  content: normal;
+}
+
+.Ht {
+  margin-top: 100px;
+}
+
+.l1 {
+  margin: 30px;
+  width: 500px;
+}
+
+//hi
+
+.HeaderText {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.Ht {
+  margin-top: 100px;
+}
+
+.Headerimage {
+  height: 300px;
+}
+
+.img {
+  height: 100%;
+  width: 100px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.mycard-Learn1 {
+  /* border: 2px solid green; */
+
+  width: 300px;
+  margin-right: 55px;
+}

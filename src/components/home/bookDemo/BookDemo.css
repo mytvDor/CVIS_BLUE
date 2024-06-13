@@ -1,0 +1,86 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 823px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.79);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 200px;
+}
+
+/* overlay-text */
+.overlay-text h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  font-weight: large;
+  text-align: left;
+}
+
+.overlay-text li {
+  color: white;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.BookNow-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.GiveFeedback-container {
+  margin-top: -10%;
+  /* height: 100vh; */
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.GiveFeedback-Header h1 {
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.GiveFeedback-Header h2 {
+  justify-content: center;
+  color: #3ca9e2;
+  text-align: center;
+  height: 130px;
+  display: flex;
+}
+
+.GiveFeedback-Form {
+  height: 100%;
+  padding: 30px;
+}
+
+.GiveFeedback-container {
+  z-index: 1000;
+  background: white;
+}

@@ -1,0 +1,171 @@
+/* .feedHeader {
+  text-align: center;
+  margin: 20px;
+}
+
+.feedheadertitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.FeedMain {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 130px;
+  height: 300px;
+  margin: 220px;
+  width: 100%;
+}
+
+.FeedMain h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.FeedMain p {
+  font-size: 14px;
+  padding: 20px;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: #120303;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slick-dots li button.active {
+  background-color: #03090f;
+} */
+
+/* .card-container {
+  width: 100%;
+  overflow: hidden;
+} */
+
+.FeedMain {
+  padding: 10px;
+  /* margin: 110px; */
+}
+
+.FeedMain h3 {
+  color: #3ca9e2;
+}
+
+.cont {
+  /* margin: 10px;
+  padding: 10px; */
+  height: 200px;
+  width: 400px;
+  margin: 40px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.cont p {
+  text-align: center;
+  /* font-size: 1.2.5vw; */
+}
+
+@media (max-width: 1251px) and (min-width: 938px) {
+  .cont {
+    height: auto;
+    width: 300px;
+  }
+}
+
+@media (max-width: 938px) and (min-width: 38px) {
+  .cont {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 657px) and (min-width: 560px) {
+  .cont {
+    height: 300px;
+    width: 170px;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 560px) and (min-width: 476px) {
+  .cont {
+    height: 300px;
+    width: 140px;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 476px) and (min-width: 406px) {
+  .cont {
+    height: 300px;
+    width: 120px;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 406px) and (min-width: 46px) {
+  .cont {
+    height: 300px;
+    width: 90px;
+    font-size: 2.5vw;
+  }
+
+  . p {
+    font-size: 0.5vw;
+  }
+}
+
+.feedheadertitle {
+  margin-top: 70px;
+  color: #3ca9e2;
+}
+
+.feedTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
