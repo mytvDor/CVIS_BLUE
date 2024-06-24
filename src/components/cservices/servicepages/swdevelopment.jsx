@@ -6,6 +6,7 @@ class swdevelopment extends Component {
   render() {
     return (
       <>
+        <Navbar></Navbar>
         <div className="container">
           <div className="image wblock">
             <Image src="https://static.wixstatic.com/media/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg" />

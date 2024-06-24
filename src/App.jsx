@@ -26,21 +26,26 @@ import Webdesign from "./components/cservices/servicepages/webdesign";
 import Login from "./components/attributes/login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Cont from "./components/contact_us/Cont";
+import Temp from "./components/home/Temp";
+import Timeline from "./components/home/Motion/Timeline";
 function App() {
   return (
     <>
       <Router>
         {/* <Navbar /> */}
         <Routes>
+          <Route path="/temp" element={<Timeline />} />
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
-          {/* <Route path="/contact" element={<ContactUs />} /> */}
+          <Route path="/contact" element={<Cont />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/graphic" element={<Garphic />} />
           <Route path="/services/seopage" element={<Seopage />} />
           <Route path="/services/cloudpage" element={<Cloudcpage />} />
           <Route path="/services/webdesign" element={<Webdesign />} />
-          <Route path="/services/androidpage" element={<Androiddevpage />} />
+          <Route path="/services/appdev" element={<Androiddevpage />} />
           <Route
             path="/services/digitalbrandpage"
             element={<Digitalbranding />}

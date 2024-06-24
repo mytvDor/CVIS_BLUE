@@ -91,6 +91,7 @@ const FeedbackForm = () => {
           <label className="label-group ">
             <p className="par">First Name</p>
             <input
+              className="input"
               type="text"
               name="firstName"
               value={formData.firstName}

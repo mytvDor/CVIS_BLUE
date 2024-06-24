@@ -1,13 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import "./aboutus.css";
+// import "./aboutus.css";
 import CoreValues from "./CoreValues";
 import Navbar from "../attributes/Navbar";
+import "./About.css";
 
 function AboutUs() {
   return (
     <>
-      {/* <div className="aboutUs-header-container">
+      <Navbar></Navbar>
+      <div className="aboutUs-header-container">
         <div className="image-overlay">
           <div className="image-overlayText">
             <div className="image-left myblock">
@@ -35,7 +37,7 @@ function AboutUs() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="image-left-row">
                 <div>
                   <p className="num">99%</p>
@@ -122,9 +124,9 @@ function AboutUs() {
             alt="imgageLeft"
           />
         </div>
-      </div> */}
+      </div>
 
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar>
       <div className="myimg"></div>
       <div className="back-supp">
         {" "}
@@ -159,7 +161,7 @@ function AboutUs() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

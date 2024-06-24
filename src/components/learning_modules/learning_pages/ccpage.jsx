@@ -8,6 +8,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LinkIcon from "@mui/icons-material/Link";
 import "../learning_pages/index.css";
 import { dataforccpage } from "../learning_pages/data.json";
+import Navbar from "../../attributes/Navbar";
+import StudFeed from "../StudFeed";
 const items = dataforccpage;
 // const items = [
 //     {
@@ -33,6 +35,7 @@ export class ccpage extends Component {
   render() {
     return (
       <div>
+        <Navbar></Navbar>
         <div
           style={{
             padding: "10px",
@@ -42,7 +45,11 @@ export class ccpage extends Component {
         >
           {" "}
           <h1 style={{ marginBottom: "10px" }}>Cloud Computing - Salesforce</h1>
-          <h2 style={{ marginBottom: "20px" }}>6 Steps | 3 Participants</h2>
+          <div className="feedbacks"></div>
+          <StudFeed></StudFeed>
+          <h2 style={{ marginBottom: "20px", marginTop: "50px" }}>
+            6 Steps | 3 Participants
+          </h2>
           <Button
             variant="contained"
             href="/learning/ccpage/ccpagecontent"
@@ -128,7 +135,7 @@ export class ccpage extends Component {
               fontSize: "3vh",
             }}
           >
-            Join
+            Enroll Now
           </Button>
         </div>
       </div>

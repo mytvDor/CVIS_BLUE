@@ -8,17 +8,25 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LinkIcon from "@mui/icons-material/Link";
 import "../learning_pages/index.css";
 import { dataforSoftwarepage } from "../learning_pages/data.json";
+import Navbar from "../../attributes/Navbar";
+import StudFeed from "../StudFeed";
 const items = dataforSoftwarepage;
 
 export class softwaretestinfpage extends Component {
   render() {
     return (
       <div>
+        <Navbar></Navbar>
+
         <div
           style={{ padding: "10px", textAlign: "center", marginTop: "100px" }}
         >
           <h1 style={{ marginBottom: "10px" }}>Software Testing</h1>
-          <h2 style={{ marginBottom: "20px" }}>6 Steps | 4 Participants</h2>
+
+          <StudFeed></StudFeed>
+          <h2 style={{ marginBottom: "20px", marginTop: "50px" }}>
+            6 Steps | 4 Participants
+          </h2>
           <Button
             variant="contained"
             href="/learning/ccpage/SoftwareTesting"
@@ -107,7 +115,7 @@ export class softwaretestinfpage extends Component {
               fontSize: "3vh",
             }}
           >
-            Join
+            Enroll Now
           </Button>
         </div>
       </div>

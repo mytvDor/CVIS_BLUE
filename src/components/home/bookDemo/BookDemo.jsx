@@ -31,7 +31,12 @@ const BookDemo = () => {
           <li>Important features for your business priorities</li>
           <li>Answers to any questions you may have</li>
           <div className="BookNow-btn">
-            <Button variant="contained">BOOk Now</Button>
+            <Button
+              variant="contained"
+              style={{ background: "rgba(101, 61, 61, 1)" }}
+            >
+              BOOk Now
+            </Button>
           </div>
         </div>
       </div>

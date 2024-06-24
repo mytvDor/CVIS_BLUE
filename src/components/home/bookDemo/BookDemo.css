@@ -22,7 +22,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background: rgba(0, 0, 0, 0.79);
+  background: rgba(0, 0, 0, 0.43);
   padding: 20px;
   border-radius: 20px;
   min-width: 200px;
@@ -50,6 +50,7 @@
 .BookNow-btn {
   text-align: center;
   margin-top: 2rem;
+  /* background: red; */
 }
 
 .GiveFeedback-container {
@@ -69,10 +70,11 @@
 
 .GiveFeedback-Header h2 {
   justify-content: center;
-  color: #3ca9e2;
+  color: black;
   text-align: center;
   height: 130px;
   display: flex;
+  margin-top: 30px;
 }
 
 .GiveFeedback-Form {
@@ -83,4 +85,8 @@
 .GiveFeedback-container {
   z-index: 1000;
   background: white;
+}
+
+.mybtn {
+  background-color: red;
 }

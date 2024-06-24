@@ -71,3 +71,22 @@ button .btn2 {
 .enqbtn:hover {
   background-color: #1a75ff;
 }
+
+.button-container {
+  /* border: 2px solid red; */
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+@media (max-width: 1150px) {
+  /* CSS rules here will apply when the screen width is 768px or less */
+
+  .container {
+    height: auto;
+  }
+}
+.container {
+  height: auto;
+}

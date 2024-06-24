@@ -1,1 +1,20 @@
+.mission {
+  font-size: 5vw; /* Responsive font size */
+  padding: 5vh 2vw; /* Responsive padding */
+  font-family: consolas;
+  text-align: center; /* Center align the text */
+}
 
+@media (max-width: 768px) {
+  .mission {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    padding: 4vh 2vw; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mission {
+    font-size: 7vw; /* Adjust font size for very small screens */
+    padding: 3vh 2vw; /* Adjust padding for very small screens */
+  }
+}

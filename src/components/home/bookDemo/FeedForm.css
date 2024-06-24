@@ -1,0 +1,170 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.feed-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f7f7f7;
+}
+
+.feed-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.single-line-input {
+  display: flex;
+  gap: 10px;
+}
+
+.single-line-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+}
+
+.single-line-input input:focus {
+  border-bottom-color: #007bff;
+  outline: none;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  margin: 100px;
+}
+
+.form-group textarea {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: auto;
+}
+
+.rating {
+  /* position: relative; */
+  display: relative;
+  /* border: 2px solid red; */
+  padding-left: 0px;
+  height: 40px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  cursor: pointer;
+  float: right;
+}
+
+.rating label::before {
+  font-family: FontAwesome;
+  content: "\f005";
+  font-size: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.rating .result {
+  position: absolute;
+  bottom: -50px;
+  width: 10%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffed85;
+  font-weight: 600;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffed85;
+}
+
+.rating > input:checked ~ label:hover {
+  color: #ffd700;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.far,
+.fa-star {
+  display: flex;
+}
+
+/* #likedMost,
+#improvementSuggestions {
+  padding: 30px;
+  width: 300px;
+  /* border: 2px solid red; */
+
+.rt {
+  /* border: 2px solid green; */
+  /* display: flex; */
+  justify-content: start;
+  align-item: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.rtn {
+  margin: 10px 0px 0px 0px;
+  min-width: 20px;
+  /* border: 2px solid red; */
+}
+
+.rtmn {
+  /* border: 2px solid red; */
+  display: flex;
+  margin: 30px;
+}
+
+.rating {
+  width: 50%;
+}
+
+.stars {
+  margin-top: 40px;
+}

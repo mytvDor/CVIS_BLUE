@@ -163,22 +163,28 @@ label {
 }
 
 .gapM {
-  border: 2px solid #3ca9e2;
-  margin-top: -700px;
-  background: #e6f6ff;
+  /* border: 2px solid #3ca9e2; */
+  margin-top: -900px;
+  background: white;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 00px; */
+  height: 500px;
 }
 
 .btn-container button {
-  background: #3ca9e2;
-  color: white;
+  background: #e6deca;
+  color: black;
   margin: 30px;
 }
 
 .row-feedback {
   display: block;
 }
+
+/* .input {
+  outline: 0;
+
+  border: 2px solid black;
+} */
