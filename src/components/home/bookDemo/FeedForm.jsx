@@ -290,7 +290,7 @@ const FeedForm = () => {
         <div className="form-group rt">
           <label className="rtn">Rate Our Services</label>
           <div className="stars">
-            <div className="rating">
+            <div className="rating" style={{ width: "200px" }}>
               {[5, 4, 3, 2, 1].map((star) => (
                 <React.Fragment key={star}>
                   <input

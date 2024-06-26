@@ -13,7 +13,7 @@ class androiddevpage extends Component {
             <Image src="https://static.wixstatic.com/media/4cdf87_5a89b2293faf4d98bd23a49e9fafebba~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_5a89b2293faf4d98bd23a49e9fafebba~mv2.jpg" />
           </div>
           <div className="text wblock">
-            <h1 className="texth1">Android Application Development</h1>
+            <h1 className="texth1"> Application Development</h1>
             <h3>About</h3>
             <p>
               Do you need a mobile app for your business? We are here to help

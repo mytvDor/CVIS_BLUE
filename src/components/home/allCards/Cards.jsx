@@ -1,5 +1,6 @@
 import React from "react";
 import Android from "./card media/android dev.png";
+import Integration from "./card media/integration.jpg";
 import SoftwareTesting from "./card media/software_testing.jpg";
 import DigitalMarketing from "./card media/digital marketing.png";
 import WebDesigning from "./card media/web_designing.jpg";
@@ -21,6 +22,21 @@ const Cards = () => {
               running the Android operating system. This will help for business
               through mobile. It gives more value to your business using a
               mobile app for your customers and clients.
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-image">
+            <img src={Integration} alt="Android App Development" />
+          </div>
+          <div className="card-content">
+            <div className="card-title">Integration</div>
+            <div className="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus repudiandae modi, maxime, nisi id magnam cum, ipsa
+              officia dicta vitae consequuntur. Modi, nisi. Laborum similique
+              praesentium optio dolorum atque nobis!
             </div>
           </div>
         </div>
