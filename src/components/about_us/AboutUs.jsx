@@ -187,13 +187,13 @@ function AboutUs() {
                 <div className="item-n">
                   <h1 className="num">24</h1>
                   <p className="num-image-left-text">
-                    Professional Online Modules
+                    Professional Software Modules
                   </p>
                 </div>
                 <div className="item-n">
                   <h1 className="num">16</h1>
                   <p className="num-image-left-text">
-                    Industry Leading Mentors
+                    Industry Leading Experts
                   </p>
                 </div>
               </div>
@@ -201,7 +201,7 @@ function AboutUs() {
                 <div className="item-n">
                   <h1 className="num">99%</h1>
                   <p className="num-image-left-text">
-                    Satisfaction Rated by Students
+                    Satisfaction Rated by Clients
                   </p>
                 </div>
                 <div className="item-n">
@@ -218,10 +218,9 @@ function AboutUs() {
             <h1 className="image-right-title rightcont">Our Vision</h1>
             <div className="image-right-text">
               <p className="myp">
-                For excellent leadership and lifelong success, a center of
-                higher learning to establish and develop an institute with an
-                expanding horizon of knowledge in the field of engineering and
-                technology.
+                To lead the future of technology through innovative software
+                solutions, driving transformative change and empowering
+                businesses to reach new heights.
               </p>
             </div>
 
@@ -229,11 +228,11 @@ function AboutUs() {
 
             <div className="image-right-text">
               <p className="myp">
-                To provide professional programs, creative academics through
-                high-quality education in engineering and related disciplines.
-                Establish mutually beneficial partnerships with industry,
-                alumni, local, state, and central governments through public
-                service assistance and collaborative research.
+                To deliver exceptional software development services with a
+                focus on quality, creativity, and client satisfaction. Forge
+                strategic partnerships with industry leaders and stakeholders to
+                advance technology, foster growth, and create impactful
+                solutions.
               </p>
             </div>
           </div>
@@ -243,40 +242,38 @@ function AboutUs() {
 
       <div className="core-values-container">
         <div className="core-value">
-          <h2>Focus on Latest Technology and Skills</h2>
+          <h2>Cutting-Edge Technology & Skills 💡</h2>
           <p>
-            Curriculum designed to cater to the latest skills needed for the
-            industry.
+            Our solutions leverage the latest technologies and skills to meet
+            industry demands.
           </p>
         </div>
         <div className="core-value">
-          <h2>Experienced Trainers</h2>
+          <h2>Expert Team 🌟</h2>
           <p>
-            Certified trainers with a good amount of work experience in the
-            industry make Leading Computer training institute.
+            Our certified experts bring extensive industry experience to every
+            project, ensuring top-notch solutions.
           </p>
         </div>
         <div className="core-value">
-          <h2>Problem Solving</h2>
+          <h2>Innovative Problem Solving 🧩</h2>
           <p>
-            We help you build a logical and analytical mindset through case
-            study and projects based on real industry scenarios.
+            We tackle challenges with creative solutions and real-world
+            scenarios to foster a strategic mindset.
           </p>
         </div>
         <div className="core-value">
-          <h2>Interview Preparation</h2>
+          <h2>Comprehensive Support 🤝</h2>
           <p>
-            An interview is the most challenging round of any hiring process.
-            Mock interviews by InterviewBuddy give you the platform to prepare,
-            practice, and experience firsthand how a real-life job interview
-            feels.
+            From initial concept to deployment, we provide end-to-end support
+            for all your software needs.
           </p>
         </div>
         <div className="core-value">
-          <h2>Career Oriented Courses</h2>
+          <h2>Growth-Focused Solutions 🚀</h2>
           <p>
-            The course includes multiple skills to put the candidate on a fast
-            track career with placement support.
+            Our tailored software solutions are designed to accelerate your
+            business growth and drive success.
           </p>
         </div>
       </div>
@@ -287,9 +284,10 @@ function AboutUs() {
           <h1
             style={{
               fontSize: "40px",
-
+              color: "#007bff",
               fontWeight: "900",
             }}
+            className="animate-down"
           >
             About Collab Vision Infosolutions
           </h1>
@@ -300,15 +298,43 @@ function AboutUs() {
               fontSize: "20px",
               fontWeight: "700",
             }}
+            className="animate-right"
           >
             {" "}
-            CVIS is a leading company focused on Cloud Technology (Salesforce
-            and MuleSoft), Website, Android App, Testing Project, Digital
-            Marketing Services, and Technical Support in Kolhapur. We build
-            great products and solutions for your business problems.
+            We are a premier software development company specializing in
+            innovative solutions across diverse domains including Cloud
+            Technology, Web Development, Mobile Applications, and Digital
+            Solutions. Our expert team delivers high-quality products and
+            services designed to address your unique business challenges and
+            drive success.
           </h3>
+          <h1
+            style={{
+              fontSize: "40px",
+              color: "#007bff",
+              fontWeight: "900",
+            }}
+            className="animate-down"
+          >
+            Our Mission{" "}
+          </h1>
 
-          <div
+          <h3
+            style={{
+              margin: "30px ",
+              fontSize: "20px",
+              fontWeight: "700",
+            }}
+            className="animate-right"
+          >
+            {" "}
+            We excel in delivering cutting-edge software development solutions
+            tailored to diverse industries, including Ecommerce, Education,
+            Manufacturing, and Healthcare. Our focus is on leveraging innovative
+            technologies to drive growth and solve complex challenges for our
+            clients.
+          </h3>
+          {/* <div
             className="imgCont"
             style={{
               display: "flex",
@@ -321,7 +347,7 @@ function AboutUs() {
             }}
           >
             <div
-              className="leftOpp"
+              className="leftOpp "
               style={{
                 minWidth: "350px",
                 maxWidth: "60%",
@@ -329,7 +355,7 @@ function AboutUs() {
               }}
             >
               {" "}
-              <div className="mission-section">
+              <div className="mission-section animate-left">
                 <h2
                   style={{
                     fontSize: "40px",
@@ -351,7 +377,7 @@ function AboutUs() {
                   Education, Manufacturing, Healthcare, and more.
                 </p>
               </div>
-              <div className="opportunities-section">
+              <div className="opportunities-section animate-right">
                 <h2
                   style={{
                     fontSize: "40px",
@@ -379,8 +405,12 @@ function AboutUs() {
             </div>
 
             <div
-              className="image"
-              style={{ minWidth: "350px", maxWidth: "40", overflow: "hidden" }}
+              className="image animate-down"
+              style={{
+                maxWidth: "230px",
+                // height: "370px",
+                overflow: "hidden",
+              }}
             >
               <img
                 src="https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg/v1/fill/w_912,h_1510,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg"
@@ -388,7 +418,7 @@ function AboutUs() {
                 style={{}}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

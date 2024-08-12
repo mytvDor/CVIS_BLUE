@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Alethia Pro", sans-serif;
+  /* font-family: "Alethia Pro", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 body {
   padding: 0;
@@ -17,3 +20,104 @@ body {
 /* html {
   width: auto;
 } */
+@keyframes down {
+  from {
+    opacity: 0;
+    scale: 0.7;
+    /* transform: translateX(-100px); */
+
+    transform: RotateY(-30%);
+    /* clip-path: inset(100% 100% 0 0); */
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    /* transform: RotateY(-30%); */
+
+    /* transform: translateX(0px); */
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-down {
+  transition: transform 0.8s ease;
+  animation: down;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(-200px);
+
+    /* transform: RotateY(-30%); */
+    /* clip-path: inset(100% 100% 0 0); */
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    /* transform: RotateY(-30%); */
+
+    transform: translateX(0px);
+    /* clip-path: inset(0 0 0 0); */
+  }
+}
+
+.animate-left {
+  transition: transform 0.8s ease;
+  animation: left;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(200px);
+
+    /* transform: RotateY(-30%); */
+    /* clip-path: inset(100% 100% 0 0); */
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    /* transform: RotateY(-30%); */
+
+    transform: translateX(0px);
+    /* clip-path: inset(0 0 0 0); */
+  }
+}
+
+.animate-right {
+  transition: transform 0.8s ease;
+  animation: right;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+@keyframes infinite-updown {
+  0% {
+    top: 20px;
+  }
+  25% {
+    top: 20px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: -20px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+.animate-updown {
+  animation: infinite-updown 4s 12 backward;
+  /* animation-duration: 2s;
+  animation-iteration-count: 4; */
+}

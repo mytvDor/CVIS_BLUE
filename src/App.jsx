@@ -29,6 +29,7 @@ import "./App.css";
 import Cont from "./components/contact_us/Cont";
 import Temp from "./components/home/Temp";
 import Timeline from "./components/home/Motion/Timeline";
+import PricingCards from "./components/home/allCards/PricingCards";
 function App() {
   return (
     <>
@@ -75,6 +76,9 @@ function App() {
             element={<SoftwareTesting />}
           />
           <Route path="/learning/ccmulesoft" element={<Ccmulesoft />} />
+
+          {/* <Route path="/pricing" element={<PricingCards />}></Route> */}
+          <Route path="/pricing/:category" element={<PricingCards />} />
         </Routes>
         <GoToTop />
         <Footer />

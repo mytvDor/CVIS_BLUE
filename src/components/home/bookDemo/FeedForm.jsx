@@ -196,15 +196,15 @@
 // export default FeedForm;
 import React, { useState } from "react";
 import "./FeedForm.css"; // Import your custom CSS file
-
+import axios from "axios";
 const FeedForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     rating: null,
-    likedMost: "",
-    improvementSuggestions: "",
+    likeMost: "",
+    improve: "",
   });
 
   const handleChange = (e) => {
@@ -223,7 +223,7 @@ const FeedForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (
@@ -236,10 +236,20 @@ const FeedForm = () => {
       return;
     }
 
+    try {
+      const response = await axios.post(
+        "https://cviswebsitebackend.onrender.com/feedback",
+        formData
+      );
+
+      console.log(response.data);
+    } catch (e) {
+      console.log(e);
+    }
+
     // Handle form submission logic here (e.g., send data to server)
     console.log(formData);
 
-    // Reset form fields after submission
     setFormData({
       firstName: "",
       lastName: "",
@@ -251,7 +261,10 @@ const FeedForm = () => {
   };
 
   return (
-    <div className="feed-form-container">
+    <div
+      className="feed-form-container"
+      style={{ marginTop: "230px", marginBottom: "230px" }}
+    >
       <form onSubmit={handleSubmit} className="feed-form">
         <h1 style={{ textAlign: "center", margin: "40px" }}>
           {" "}
@@ -309,9 +322,9 @@ const FeedForm = () => {
         </div>
         <div className="form-group">
           <textarea
-            id="likedMost"
-            name="likedMost"
-            value={formData.likedMost}
+            id="likeMost"
+            name="likeMost"
+            value={formData.likeMost}
             onChange={handleChange}
             style={{
               border: "none",
@@ -323,10 +336,10 @@ const FeedForm = () => {
         </div>
         <div className="form-group">
           <textarea
-            id="improvementSuggestions"
-            name="improvementSuggestions"
+            id="Improve"
+            name="Improve"
             placeholder="How can we improve ?"
-            value={formData.improvementSuggestions}
+            value={formData.Improve}
             onChange={handleChange}
             style={{
               border: "none",

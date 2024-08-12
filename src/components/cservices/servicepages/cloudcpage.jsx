@@ -8,11 +8,11 @@ class Graphic extends Component {
     return (
       <>
         <Navbar></Navbar>
-        <div className="container">
-          <div className="image wblock">
+        <div className="container ">
+          {/* <div className="image wblock">
             <Image src="https://static.wixstatic.com/media/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg" />
-          </div>
-          <div className="text wblock">
+          </div> */}
+          <div className="text wblock animate-down">
             <h1 className="texth1">Cloud Services</h1>
             <h3>About</h3>
             <p>
@@ -27,16 +27,25 @@ class Graphic extends Component {
               and money in managing servers and related employees. Hence Cloud
               computing technologoes like AWS, Azure etc is in Boom today.
             </p>
+
             <button className="enqbtn">Enquiry</button>
+
+            <br />
+            <Button className="btn1" href="#">
+              Previous
+            </Button>
+            <Button className="btn2" href="#">
+              Next
+            </Button>
           </div>
         </div>
         <div className="button-container">
-          <Button className="btn1" href="#">
+          {/* <Button className="btn1" href="#">
             Previous
           </Button>
           <Button className="btn2" href="#">
             Next
-          </Button>
+          </Button> */}
         </div>
       </>
     );

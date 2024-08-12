@@ -1,60 +1,70 @@
 import React from "react";
 import Android from "./card media/android dev.png";
 import Integration from "./card media/integration.jpg";
-import SoftwareTesting from "./card media/software_testing.jpg";
+import Learning from "./card media/Learning.jpg";
 import DigitalMarketing from "./card media/digital marketing.png";
 import WebDesigning from "./card media/web_designing.jpg";
 import "./cards.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cards = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (category) => {
+    navigate(`/pricing/${category}`);
+  };
   return (
     <div className="main-container">
       <div className="card-container">
         {/* First Card - Android App Development */}
-        <div className="card">
+        <div
+          className="card animate-left"
+          onClick={() => handleCardClick("App Development")}
+        >
           <div className="card-image">
             <img src={Android} alt="Android App Development" />
           </div>
           <div className="card-content">
             <div className="card-title">App Development</div>
-            <div className="card-text">
-              It is the process by which applications are created for devices
-              running the Android operating system. This will help for business
-              through mobile. It gives more value to your business using a
-              mobile app for your customers and clients.
-            </div>
+            <p className="card-text" style={{ textAlign: "left" }}>
+              Empowering innovation through cutting-edge mobile and web app
+              development tailored to your needs.
+            </p>
           </div>
         </div>
 
-        <div className="card">
+        <div
+          className="card animate-right"
+          onClick={() => handleCardClick("App Development")}
+        >
+          {" "}
           <div className="card-image">
-            <img src={Integration} alt="Android App Development" />
+            <img src={Integration} alt="integration" />
           </div>
           <div className="card-content">
             <div className="card-title">Integration</div>
-            <div className="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus repudiandae modi, maxime, nisi id magnam cum, ipsa
-              officia dicta vitae consequuntur. Modi, nisi. Laborum similique
-              praesentium optio dolorum atque nobis!
-            </div>
+            <p className="card-text" style={{ textAlign: "left" }}>
+              Seamlessly connecting systems and enhancing workflows with our
+              robust integration platform solutions
+            </p>
           </div>
         </div>
 
         {/* Second Card - Software Testing */}
-        <div className="card">
+        <div
+          className="card animate-left"
+          onClick={() => handleCardClick("App Development")}
+        >
+          {" "}
           <div className="card-image">
-            <img src={SoftwareTesting} alt="Software Testing" />
+            <img src={Learning} alt="Learning Platform" />
           </div>
           <div className="card-content">
             <div className="card-title">Learning Platform</div>
-            <div className="card-text">
-              We provide our learning platform in a manner that ensures global
-              accessibility, cost-effectiveness, and scalability. Our approach
-              allows for direct interaction with learners, enabling us to tailor
-              educational experiences and better understand their needs and
-              goals.
-            </div>
+            <p className="card-text" style={{ textAlign: "left" }}>
+              Elevate your skills with our proprietary, state-of-the-art
+              learning platform designed for comprehensive education.
+            </p>
           </div>
         </div>
 
@@ -76,19 +86,24 @@ const Cards = () => {
         </div> */}
 
         {/* Fourth Card - Web Designing */}
-        <div className="card">
-          <div className="card-image">
-            <img src={WebDesigning} alt="Web Designing" />
+        <div
+          className="card animate-right"
+          onClick={() => handleCardClick("App Development")}
+        >
+          {" "}
+          <div className="card-image ">
+            <img
+              src={WebDesigning}
+              alt="Web Designing"
+              onClick={() => handleCardClick("WebDevelopment")}
+            />
           </div>
           <div className="card-content">
             <div className="card-title">Web Designing</div>
-            <div className="card-text">
-              A well-designed website can help you form a good impression on
-              your prospective customers. It can also help you nurture your
-              leads and get more conversions. But, more importantly, it provides
-              a good user experience and helps your website visitors access and
-              navigate your website with ease.
-            </div>
+            <p className="card-text" style={{ textAlign: "left" }}>
+              Creating dynamic and tailored web solutions with our expert web
+              development services.
+            </p>
           </div>
         </div>
       </div>

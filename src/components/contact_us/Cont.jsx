@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import "../home/bookDemo/FeedForm.css"; // Import your custom CSS file
 import Navbar from "../attributes/Navbar";
-
+import axios from "axios";
 const Cont = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
+    country: "",
+    phone: "",
     message: "",
-    country: "", // Add country field to form data
+
+    // Add country field to form data
   });
 
   const handleChange = (e) => {
@@ -19,7 +22,7 @@ const Cont = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (
@@ -27,16 +30,51 @@ const Cont = () => {
       !formData.lastName ||
       !formData.email ||
       !formData.message ||
+      !formData.phone ||
       !formData.country // Validate country field
     ) {
       alert("Please fill in all mandatory fields.");
       return;
     }
 
+    const countryCode = {
+      india: "+91",
+      us: "+1",
+      singapur: "+65",
+    };
+
+    if (formData.country) {
+      const countcode = countryCode[formData.country.toLowerCase()];
+
+      if (countcode) {
+        formData.phone = `${countcode}${formData.phone}`;
+      }
+    }
+
+    try {
+      const response = await axios.post(
+        "https://cviswebsitebackend.onrender.com/contact",
+        formData
+      );
+      console.log("SUBMITTED", response.data);
+    } catch (e) {
+      console.log(e);
+    }
+
+    // try {
+    //   const response = await axios.post(
+    //     "https://cviswebsitebackend.onrender.com/feedback",
+    //     formData
+    //   );
+
+    //   console.log(response.data);
+    // } catch (e) {
+    //   console.log(e);
+    // }
+
     // Handle form submission logic here (e.g., send data to server)
     console.log(formData);
 
-    // Reset form fields after submission
     setFormData({
       firstName: "",
       lastName: "",
@@ -48,9 +86,74 @@ const Cont = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar />{" "}
+      <h3
+        style={{
+          margin: "100px 20px 10px 20px",
+          textAlign: "center",
+          fontSize: "1.2em",
+        }}
+      >
+        {/* We'd love to hear from you! Whether you have questions, need support, or
+        are interested in our services, please fill out the form below. Our team
+        will get back to you as soon as possible. */}
+        <br />
+        <></>
+        <br />
+        <div
+          style={{
+            color: "#007bff",
+            fontSize: "1.2em",
+            marginTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          🚀 Contact us for any questions or inquiries about our services.
+        </div>
+        <div
+          style={{
+            color: "#007bff",
+            fontSize: "1.2em",
+            marginTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          🛠️ Reach out for technical support or service-related issues.
+        </div>
+        <div
+          style={{
+            color: "#007bff",
+            fontSize: "1.2em",
+            marginTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          💬 Share your experience or provide feedback on our services.
+        </div>
+        <div
+          style={{
+            color: "#007bff",
+            fontSize: "1.2em",
+            marginTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          📝 Request a personalized quote for your project.
+        </div>
+        <div
+          style={{
+            color: "#007bff",
+            fontSize: "1.2em",
+            marginTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          📅 For general information or to schedule a consultation below.
+        </div>
+        <br />
+      </h3>
       <div className="feed-form-container">
-        <form onSubmit={handleSubmit} className="feed-form">
+        <form onSubmit={handleSubmit} className="feed-form animate-left">
           <h1 style={{ textAlign: "center", margin: "40px" }}> Contact Us </h1>
           <div className="form-group single-line-input">
             <input
@@ -101,10 +204,19 @@ const Cont = () => {
               required
             >
               <option value="">Select Country</option>
-              <option value="India">India</option>
-              <option value="US">US</option>
-              <option value="Singapore">Singapore</option>
+              <option value="India">india </option>
+              <option value="US">us</option>
+              <option value="Singapore">singapore</option>
             </select>
+            <input
+              type="text"
+              name="phone"
+              placeholder="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              style={{ border: "none", borderBottom: "1px solid black" }}
+            />
           </div>
           <div className="form-group">
             <textarea

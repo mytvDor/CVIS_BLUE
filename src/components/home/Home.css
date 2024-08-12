@@ -18,3 +18,120 @@
     padding: 3vh 2vw; /* Adjust padding for very small screens */
   }
 }
+
+/* Main section styling */
+main {
+  top: 0px;
+  margin-top: -70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 30vh; /* Ensures the main section covers at least the viewport height */
+  /* padding: 20px; */
+  background-color: white; /* Optional background color */
+
+  /* border: 2px solid red; */
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  top: 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1500px; /* Optional max width */
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+  gap: 120px; /* Gap between image and text */
+  /* border: 2px solid red; */
+}
+
+/* Image styling */
+.container img {
+  /* border: 2px solid red; */
+
+  width: 100%;
+  max-width: 700px; /* Optional max width for the image */
+  height: auto;
+  border-radius: 10px; /* Optional rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the image */
+}
+
+/* Hero text styling */
+.hero-text {
+  max-width: 500px; /* Optional max width for the text */
+  text-align: left;
+  padding: 0px 20px 0px 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the text */
+  text-align: left;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666; /* Lighter color for the text */
+}
+
+button {
+  padding: 1em 2em;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* Media queries */
+@media (max-width: 884px) {
+  .container {
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 678px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  main {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 428px) {
+  /* nav ul {
+    display: none;
+  } */
+  main {
+    margin-top: 0px;
+  }
+}
+
+/* #3ca9e2 */

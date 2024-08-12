@@ -4,7 +4,7 @@
   display: grid;
   height: auto;
   place-items: center;
-  background: #3ca9e2;
+  background: #007bff;
   padding: 30px;
 }
 ::selection {
@@ -29,7 +29,7 @@
 
 .wrapper .box i.quote {
   font-size: 20px;
-  color: #3ca9e2;
+  color: #007bff;
 }
 .wrapper .box .content {
   display: flex;

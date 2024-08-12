@@ -60,7 +60,7 @@ function Services() {
 
       <div>
         <h1 className="HeaderText Ht">Services</h1>
-        <div className="Headerimage">
+        <div className="Headerimage ">
           <Image
             className="img"
             width={"100%"}
@@ -68,10 +68,10 @@ function Services() {
             src="https://static.wixstatic.com/media/11062b_bd24f5b72b31462882a36f9ce22c7e3a~mv2.jpeg/v1/fill/w_1899,h_239,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_bd24f5b72b31462882a36f9ce22c7e3a~mv2.jpeg"
           />
         </div>
-        <div>
+        <div className="gapper">
           <div className="cards">
             {cardData.map((card, index) => (
-              <div className="mycard-Learn1 l1">
+              <div className="mycard-Learn1 l1 animate-down">
                 <NewsHeaderCard
                   key={index}
                   className="mainCard"

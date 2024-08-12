@@ -265,14 +265,15 @@ body {
 .animate-from-left {
   color: white;
 
-  margin: 30px 0 0 -60px;
+  margin: 30px 0 0 0px;
   text-align: center;
 }
 
 .myp {
   font-size: 17px;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
 }
 
 /* Navbar styles */
@@ -298,13 +299,14 @@ body {
   font-size: 30px;
   text-align: left;
   margin: 20px 0 20px 0;
+  font-weight: 500;
 }
 
 .item-n h1 {
   color: white;
   font-size: 70px;
   text-align: left;
-  color: #3ca9e2;
+  color: #007bff;
 }
 
 .item-n {
@@ -425,14 +427,16 @@ body {
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-align: left;
-  font-weight: 800;
+  font-weight: 500;
   height: auto;
 }
 
 .core-value p {
   font-size: 1rem;
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: 200;
   text-align: left;
   margin-top: 20px;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
 }

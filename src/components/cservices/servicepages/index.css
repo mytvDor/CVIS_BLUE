@@ -7,22 +7,23 @@
   flex-wrap: wrap;
   justify-content: center;
   align-item: center;
-  height: 100%;
-
-  margin-bottom: 40px;
+  /* height: 100%; */
+  /* z-index: -100; */
+  margin-bottom: 0px;
 }
 
 .wblock {
-  width: 500px;
-  height: 500px;
-  margin: 40px;
+  width: 300px;
+  margin: 20px;
+  /* height: 500px; */
+  /* margin-bottom: 550px; */
   /* border: 2px solid red; */
 }
 
 .image {
   margin-top: 70px;
   height: 500px;
-  width: 500px;
+  width: 300px;
 }
 
 .text {
@@ -82,7 +83,13 @@ button .btn2 {
 
 @media (max-width: 1150px) {
   /* CSS rules here will apply when the screen width is 768px or less */
-
+  .wblock {
+    width: 300px;
+    /* height: 70vh; */
+    margin: 40px;
+    /* margin-bottom: 550px; */
+    /* border: 2px solid red; */
+  }
   .container {
     height: auto;
   }

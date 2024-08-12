@@ -34,7 +34,7 @@ function Learning() {
       <h1 className="HeaderText Ht">Learning</h1>
       <div className="cards">
         {cardData.map((card, index) => (
-          <div className="mycard-Learn">
+          <div className="mycard-Learn animate-down">
             {" "}
             <TaggedContentCard
               key={index}

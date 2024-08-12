@@ -58,7 +58,10 @@ export default function CardBrochure() {
           </Box>
         </Item>
 
-        <Item className="itemCard" style={{ backgroundColor: "black" }}>
+        <Item
+          className="itemCard animate-left"
+          style={{ backgroundColor: "black" }}
+        >
           <Box id="category-b" sx={{ textTransform: "uppercase" }}>
             <img className="icons" src={Branding} alt="Branding" />
             <div className="titleBranding">Branding</div>
@@ -72,7 +75,10 @@ export default function CardBrochure() {
             </li> */}
           </Box>
         </Item>
-        <Item className="itemCard" style={{ backgroundColor: "#757575" }}>
+        <Item
+          className="itemCard animate-right"
+          style={{ backgroundColor: "#757575" }}
+        >
           <Box id="category-b" sx={{ textTransform: "uppercase" }}>
             <img className="icons" src={Internship} alt="Internship" />
             <div className="title">Internship</div>
@@ -86,7 +92,10 @@ export default function CardBrochure() {
             </li> */}
           </Box>
         </Item>
-        <Item className="itemCard" style={{ backgroundColor: "#EDEDED" }}>
+        <Item
+          className="itemCard animate-left"
+          style={{ backgroundColor: "#EDEDED" }}
+        >
           <Box id="category-b" sx={{ textTransform: "uppercase" }}>
             <img className="icons" src={pencil} alt="pencil" />
             <div className="title">Design</div>
@@ -100,7 +109,10 @@ export default function CardBrochure() {
             </li> */}
           </Box>
         </Item>
-        <Item className="itemCard" style={{ backgroundColor: "#4BD1A0" }}>
+        <Item
+          className="itemCard animate-right"
+          style={{ backgroundColor: "#4BD1A0" }}
+        >
           <Box id="category-b" sx={{ textTransform: "uppercase" }}>
             <img className="icons" src={Consulting} alt="Consulting" />
             <div className="titleConsulting">Consulting</div>

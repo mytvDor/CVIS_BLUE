@@ -27,12 +27,12 @@
 }
 
 .navbar li a:hover,
-.navbar li a.active{
+.navbar li a.#007bff{
     color:  rgb(2, 2, 39);
 }
 
 .navbar li a:hover::after,
-.navbar li a.active::after{
+.navbar li a.#007bff::after{
     content: "";
     width: 30%;
     height:2px;
@@ -93,7 +93,7 @@
 
 .enroll-button {
   padding: 10px 20px;
-  background-color: #3ca9e2;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -109,8 +109,8 @@
 }
 
 .enroll-button:hover {
-  color: #3ca9e2;
-  border: 2px solid #3ca9e2;
+  color: #007bff;
+  border: 2px solid #007bff;
 }
 
 .contact-s {
@@ -158,7 +158,7 @@
 
 /* Follow */
 .socialMedia-icons a {
-  color: #01559f;
+  color: #007bff;
   font-size: 50px;
   margin-right: 10px;
   display: inline-flex;

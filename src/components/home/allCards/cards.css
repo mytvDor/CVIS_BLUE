@@ -54,14 +54,17 @@
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 25px;
   margin: 10px 0;
-  color: #333;
+  color: White;
+  background: #007bff;
+  border-radius: 20px;
 }
 
 .card-text {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  text-algin: left;
+  color: black;
   margin: 0 auto; /* Centers the text container */
   max-width: 80%; /* Limits the width of the text container */
 }
